@@ -1,0 +1,58 @@
+---
+title: "Resume"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+## Academic Background
+- **Columbia University in the City of New York, New York, NY 09/2024**
+
+- Master of Science. Environmental health Data science
+
+- Coursework: Principles of Toxicology, Data Science, Principle of Epidemiology, 	Environmental Health Sciences
+
+- **Rutgers university,New Brunswick 09/2020 – 05/2024**
+
+- Bachelor of Computer Science(B.S.)
+
+- Coursework: Computer science, Calculus, Linear Algebra, Probability and Statistics, Software methodology,Data structure
+
+
+## Professional Experience
+- **Company**: Alipay (China) Network Technology Co., Ltd.
+- **Role**:Data Analyst Internship, Wealth Management Division  
+- **Responsibilities**:                                                                
+Advertising Project: Analyzed ad placement data, provided CPM pricing recommendations to specific business teams, calculated key metrics such as ad recall, and click-through rates, and assessed total ad revenue based on the results.
+Targeted Advertising Project: Assisted in data monitoring and analysis, performed user feature analysis, established user profiles, and provided strategic recommendations and data support for optimizing products and operations.
+Alipay Direct Traffic Project: Evaluated the goods data of the project, conducted case analysis, generated recommendations, and proposed promotional strategies for the Alipay Direct Traffic business.
+Ant Credit Pay Project: Examined Ant Credit Pay user data using Python, established user profiles, and provided strategic recommendations based on users' lifecycle needs.
+Other: Provided daily support for data analysis, including using the Python web crawling framework Scrapy to crawl the text of posts with "Alipay" in the title on websites.
+
+## Researh
+CA Heart Disease death rate of Old people comparison Before and After COVID-19            
+
+Gather data from Yelp, CDC, American Census, etc.
+Cleaned and analyzed data using R, including outlier detection and handling, removing irrational data, and set different models to fit the datasets.
+Analyzing what factors are associated with heart disease mortality by using the data with medical care resource, number of fast food restaurant, number of gym, etc. 
+Utilized visualization tools to present data, improving data analysis and reporting efficiency and accuracy (ggplot, boxplot, scatterplot).
+
+
+## ACTIVITIES
+
+- **ROSE Semester Exchange Program**
+- Exchange Student, Peking University (PKU)                                                                    
+Participated in a year-long program of English-taught courses at Peking University instructed by PKU professors.
+Conducted an on-site visit to Baidu's work campus and interviewed T6-level engineers to gain insights into AI and ML projects and exposure to real-world applications of these technologies.
+
+- **Rutgers Chinese Students & Scholars Association - RCSSA**
+- Core Member, Publicity Team                                                                             
+Worked on designing, formatting, and sharing articles on a public account to increase followers and readership.
+Helped create content for special events like Halloween, Spring Festival, and campus eSports competitions to get the account more visibility and followers.
+Participated in and organized interviews and screenings for the next round of public account operation team members to make sure everyone worked well together.
+
+
+## Skills
+- R, Python,Java,JavaScript,SQL,HTML,Matlab,MongoDB,MySQL
+

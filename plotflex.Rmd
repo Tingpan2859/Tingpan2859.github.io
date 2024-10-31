@@ -1,0 +1,78 @@
+---
+title: "flex"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(viridisLite)
+library(flexdashboard)
+library(blogdown)
+library(dplyr)
+library(rnoaa)
+library(p8105.datasets)
+library(plotly)
+```
+
+## Column {data-width="650"}
+
+### Max Temp vs. Prcp
+
+```{r}
+scatter_data <- ny_noaa%>%
+  filter(!is.na(tmax),!is.na(prcp),!is.na(tmin))%>%
+  sample_frac(0.01)
+
+plot_ly(data = scatter_data, x = ~prcp, y = ~tmax, type = 'scatter', mode = 'markers') %>%
+  layout(title = "Scatter Plot of Max Temperature vs. Precipitation",
+         xaxis = list(title = "Max Temperature (°C)"),
+         yaxis = list(title = "Precipitation (mm)"))
+
+```
+
+## Column {data-width="350"}
+
+### Monthly Average Prcp by year
+
+```{r}
+prcp_data <- ny_noaa %>%
+  mutate(
+    prcp = as.numeric(prcp),
+    year = lubridate::year(date),
+    month = lubridate::month(date, label = TRUE)
+  ) %>%
+  filter(!is.na(prcp)) %>%
+  group_by(year, month) %>%
+  summarize(avg_prcp = mean(prcp, na.rm = TRUE), .groups = 'drop')
+
+plot_ly(data = prcp_data, x = ~month, y = ~avg_prcp, color = ~factor(year), type = 'scatter', mode = 'lines',colors = "viridis") %>%
+  layout(
+    title = "Monthly Average Precipitation by Year",
+    xaxis = list(title = "Month"),
+    yaxis = list(title = "Average Precipitation (mm)"),
+    legend = list(title = list(text = "Year"))
+  )
+```
+
+
+
+
+
+
+### Max Temp by Month
+
+```{r}
+# Prepare data for box plot
+box_data <- ny_noaa %>%
+  filter(!is.na(tmax))%>%
+  mutate(month = lubridate::month(date, label = TRUE))
+
+plot_ly(data = box_data, x = ~month, y = ~tmax, type = 'box') %>%
+  layout(title = "Box Plot of Max Temperature by Month",
+         xaxis = list(title = "Month"),
+         yaxis = list(title = "Max Temperature (°C)"))
+
+
+```
