@@ -31,7 +31,7 @@ Ant Credit Pay Project: Examined Ant Credit Pay user data using Python, establis
 Other: Provided daily support for data analysis, including using the Python web crawling framework Scrapy to crawl the text of posts with "Alipay" in the title on websites.
 
 ## Researh
-CA Heart Disease death rate of Old people comparison Before and After COVID-19            
+- **CA Heart Disease death rate of Old people comparison Before and After COVID-19**            
 
 Gather data from Yelp, CDC, American Census, etc.
 Cleaned and analyzed data using R, including outlier detection and handling, removing irrational data, and set different models to fit the datasets.
